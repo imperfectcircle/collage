@@ -25,7 +25,7 @@ let lastMouseY = null;
 function loadImages() {
     const loader = new THREE.TextureLoader();
     for (let i = 0; i < numImages; i++) {
-        loader.load(`./images/image_${i}.jpg`, function (texture) {
+        loader.load(`../../images/image_${i}.jpg`, function (texture) {
             textures.push(texture);
             if (textures.length === numImages) {
                 createCollage();
